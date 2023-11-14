@@ -1,0 +1,65 @@
+Step 1. Launch Terminal.
+Go to Launchpad – Other – Terminal
+
+Step 2. Install HomeBrew
+/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+
+->Install Python3 with Brew
+brew install python3
+
+Optional, PATH environment
+->Set up PATH environment variable, if you used HomeBrew to install Python3, then HomeBrew already added PATH.
+
+-> Do not change PATH environment if you can launch python3 from terminal.
+
+-> Add the following line to your ~/.profile file
+export PATH=/usr/local/bin:/usr/local/sbin:$PATH
+
+-> Usually your Python installation directory looks like this, add it to your PATH
+PATH="/Library/Frameworks/Python.framework/Versions/3.6/bin:${PATH}"
+
+Step 3. download the project 
+
+Step 4. Replace lines 1,2 and 3 in SwedishEventPlanner.py to 
+import sys
+sys.path.insert(1, 'path to ActiveDirectory Folder')
+sys.path.insert(3, 'path to AdditionalRequests Folder')
+
+Step 5. 
+cd Group26_SEP/myenv  
+
+Step 6. 
+source bin/activate 
+
+Step 7.
+cd ..
+cd ..
+
+Step 8.
+python3 SwedishEventPlanner.py                            
+
+->Credentials:
+customerService	sarah@sep.se
+seniorCustomerManager	janet@sep.se
+sepHRManagersenior	simon@sep.se
+administratorManager	mike@sep.se
+financeManager	alice@sep.se
+productionManager	jack@sep.se
+serviceManager	natalie@sep.se
+audioSubTeam	antony@sep.se
+graphicSubTeam	julia@sep.se
+waitressSubTeam	kate@sep.se
+
+->Department
+Service
+Production
+
+->SubTeams
+audioSubTeam
+graphicSubTeam
+waitressSubTeam
+
+• Workflow of event requests (event initiation and application - FROM CustomerΩService → SCS → FM > AM → SCS)
+• Workflow of tasks distribution to services/production departments. (choose one sub-team from each department) - SM/PM → Subteam → SM/PM
+• Staff recruitment management. SM/PM > HR > SM/PM
+• Financial requests management. SM/PM → FM → SM/PM
