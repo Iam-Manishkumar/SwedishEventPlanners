@@ -38,7 +38,7 @@ cd ..
 Step 8.
 python3 SwedishEventPlanner.py                            
 
-->Credentials:
+->Credentials for the application:
 customerService	sarah@sep.se
 seniorCustomerManager	janet@sep.se
 sepHRManagersenior	simon@sep.se
